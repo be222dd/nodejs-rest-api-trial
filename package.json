@@ -1,0 +1,15 @@
+{
+  "name": "restful-shop-api",
+  "version": "1.0.0",
+  "description": "A node js restfull api trial in shopping domain",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Beysim Eryalmaz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
+}
