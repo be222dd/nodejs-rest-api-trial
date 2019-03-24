@@ -9,8 +9,13 @@ router.get('/', function (req, res) {
 
 // http post 201 status
 router.post('/', function (req, res) {
+  const product = {
+    name: req.body.name,
+    price: req.body.price
+  }
   res.status(201).json({
-    message: 'this is a post request for /products'
+    message: 'this is a post request for /products',
+    product: product
   })
 })
 
