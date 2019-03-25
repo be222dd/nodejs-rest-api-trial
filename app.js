@@ -2,8 +2,13 @@ const express = require('express')
 const app = express()
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
 const productRoutes = require('./api/routes/products')
 const orderRoutes = require('./api/routes/orders')
+
+mongoose.connect('mongodb://be222dd:b123e123@ds121996.mlab.com:21996/node-restapi-shop', function () {
+  console.log('Connected to mongoDb')
+})
 
 app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({extended: true}))

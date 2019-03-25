@@ -16,10 +16,9 @@ router.get('/:orderId', function (req, res) {
 
 // http post 201 status
 router.post('/', function (req, res) {
-  
-  const order={
-      productId:req.body.productId,
-      productQuantity:req.body.quantity
+  const order = {
+    productId: req.body.productId,
+    productQuantity: req.body.quantity
   }
   res.status(201).json({
     message: 'this is a post request for /orders/id',
